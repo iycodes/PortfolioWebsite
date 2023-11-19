@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "space_grotesk";
+    src: url(../public/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf
+     );
+}
+
+$main_font:"space_grotesk", sans-serif;
+
+* {
+    font-family: $main_font;
+}
