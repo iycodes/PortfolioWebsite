@@ -1,3 +1,5 @@
+$loadingBoxSize: 180px;
+
 .loadingWrapper {
   background-color: black;
   position: fixed;
@@ -6,11 +8,46 @@
   align-items: center;
   justify-content: center;
 }
+.loadingBox {
+  position: relative;
+  width: $loadingBoxSize;
+  background-color: #808080;
+  height: 5px;
+}
 .loadingBar {
-  width: 150px;
-  height: 10px;
+  position: absolute;
+  left: 0;
+  // width: 150px;
+  // width: 0px;
+  height: 5px;
   background-color: white;
-  box-shadow: rgba(255, 255, 255, 0.64) 5px 0px 20px;
+  box-shadow: 10px 0px 13px rgba(255, 255, 255, 0.5),
+    -10px 0px 13px rgba(255, 255, 255, 0.5);
+  animation-name: increaseBar;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes increaseBar {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: $loadingBoxSize;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
 // .loading_section {

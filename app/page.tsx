@@ -1,10 +1,19 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { LoadingScreen } from "./components/LoadingScreen/LoadingScreen";
+import { sleep } from "./helpers/helperFunctions";
+import Home from "./Home";
+import { Something } from "./components/something/something";
 
-export default function Home() {
+// const Home = React.lazy(() => import("./Home"));
+//
+export default async function Page() {
+  await sleep(3000);
   return (
     <div>
-      <LoadingScreen />
+      {/* <Suspense fallback={<LoadingScreen />}> */}
+      <div>some text</div>
+
+      {/* </Suspense> */}
     </div>
   );
 }
