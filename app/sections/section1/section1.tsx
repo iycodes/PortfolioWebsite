@@ -5,7 +5,6 @@ import useIsomorphicLayoutEffect from "@/app/helpers/isomorphicEffect";
 
 import { FaGithub } from "react-icons/fa6";
 import { gsap } from "@/app/lib/gsap";
-import { CustomEase } from "gsap/CustomEase";
 import { signal } from "@preact/signals-core";
 // import { effect, signal } from "@preact/signals-react";
 import { EASE2, customEaseIn } from "@/app/lib/gsap";
@@ -13,7 +12,8 @@ import { motion } from "framer-motion";
 import PictureFrame from "@/app/components/pictureFrame/PictureFrame";
 import Section1A from "../section1A/section1A";
 import { useGSAP } from "@gsap/react";
-import { rockitFont } from "@/app/layout";
+import { rockitFont } from "@/app/page";
+// import { rockitFont } from "@/app/layout";
 let timeline_: gsap.core.Timeline | undefined;
 
 export const section1Timeline = signal(timeline_);

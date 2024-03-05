@@ -4,7 +4,6 @@ import styles from "./home.module.scss";
 import useIsomorphicLayoutEffect from "../helpers/isomorphicEffect";
 // import { ScrollTrigger, customEaseIn, gsap } from "../lib/gsap";
 
-import { gsap } from "@/app/lib/gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import { sleep } from "../helpers/helperFunctions";
@@ -22,13 +21,13 @@ import TechStack from "../sections/techstack/TechStack";
 import Contact from "../sections/contact/contact";
 import StackedCards from "../sections/stackedCards/stackedCards";
 import { ScrollSmoother } from "gsap-trial/all";
-import { useGSAP } from "@gsap/react";
-import { customEaseIn } from "../lib/gsap";
+import { customEaseIn, useGSAP, gsap } from "../lib/gsap";
 import Footer from "../sections/Footer/Footer";
 import Section5_mobile from "../sections/Section5_mobile/Section5_mobile";
 import Menu, { menuRefSignal } from "../components/menu/Menu";
-import { iceFont, rockitFont } from "../layout";
+// import { iceFont, rockitFont } from "../layout";
 import { headerRefSignal } from "../components/Header/Header";
+import { iceFont, rockitFont } from "../page";
 
 function Home() {
   const cursorLabel = useRef(null);
@@ -275,7 +274,7 @@ export const Iycodes = () => {
     iycodesTl.value = tl;
   });
   return (
-    <span className={`${styles.iycodes} ${rockitFont.className}`} ref={iycodes}>
+    <span className={styles.iycodes} ref={iycodes}>
       <span className={`${iceFont.className} ${styles.a}`}>VICTOR</span>
       <span className={`${iceFont.className} ${styles.b}`}>IYANUOLUWA</span>
     </span>

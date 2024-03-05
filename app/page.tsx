@@ -24,10 +24,18 @@ import ScrollSmoothnerWrapper from "./ScrollSmoothner";
 import Section5_mobile from "./sections/Section5_mobile/Section5_mobile";
 import StackCards2 from "./StackedCards2/StackCards2";
 import Header from "./components/Header/Header";
+import localFont from "next/dist/compiled/@next/font/dist/local";
 
 // const Home = React.lazy(() => import("./Home/Home"));
 // const Homr = React.lazy(() => Homm());
 //
+
+export const rockitFont = localFont({
+  src: "..//public/fonts/rockit.ttf",
+});
+export const iceFont = localFont({
+  src: "..//public/fonts/ice.ttf",
+});
 export default async function Page() {
   // await sleep(3000);
 

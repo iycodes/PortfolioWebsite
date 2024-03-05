@@ -6,7 +6,6 @@ import "./Menu.scss";
 import { gsap, useGSAP } from "@/app/lib/gsap";
 import { Power2, Power4 } from "gsap";
 import { signal } from "@preact/signals-core";
-import { rockitFont } from "@/app/layout";
 
 export const menuRefSignal = signal<React.LegacyRef<HTMLDivElement> | any>(
   null
