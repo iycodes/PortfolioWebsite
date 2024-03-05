@@ -1,0 +1,198 @@
+@import "../../../variables.scss";
+
+.modalContainer {
+  height: auto;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  pointer-events: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.cursorLabel {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  // background-color: #;
+  // background-color: red;
+  position: absolute;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 300;
+  pointer-events: none;
+}
+.custom_pointer {
+  // position: fixed;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  background-color: $text_color;
+  color: $text_color;
+  mix-blend-mode: difference;
+  z-index: 15;
+}
+.container {
+  display: flex;
+  visibility: hidden;
+  // padding: 1rem 1rem 0 1rem;
+  justify-content: center;
+  flex-direction: column;
+  color: $text_color;
+  height: auto;
+  min-height: 100svh;
+  width: 100%;
+  margin-bottom: 100px;
+
+  // background-color: pink;
+}
+.title_block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  // margin-bottom: 50px;
+  // background-color: blue;
+  min-height: 40vh;
+  margin-top: 50px;
+}
+.title_1 {
+  font-weight: 600;
+  color: $text_color;
+  padding: 1rem;
+}
+
+.desc_1 {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 500;
+  color: $text_color;
+  font-family: "Berkshire Swash";
+}
+
+.btn_1 {
+  font-size: var(--font-size-btn-2);
+  font-weight: 500;
+  color: $text_color;
+  font-family: var(--sub-font);
+}
+
+.title_1 {
+  // display: flex;
+  text-transform: uppercase;
+  width: 100%;
+  // background-color: green;
+}
+
+.title_1 span {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.title_1 u {
+  text-decoration: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.title_row {
+  display: flex;
+  // background-color: green;
+  width: 100%;
+}
+.title_row_1 {
+  display: flex;
+  // background-color: red;
+  margin-right: auto;
+  width: max-content;
+}
+.title_charts_cont {
+  display: flex;
+  overflow: hidden;
+}
+.title_charts_cont span {
+  // font-family: "red_hat" !important;
+  // font-family: Cardo !important;
+
+  font-weight: 800;
+  // font-size: 7rem;
+  // font-size: 2.5rem;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+}
+.title_row_2 {
+  margin-left: auto;
+  width: min-content;
+  // background-color: blue;
+}
+
+.title_1 #ry {
+  /* margin-right: 0.37rem; */
+}
+
+.title_1 #tells {
+  margin-right: 0.15rem;
+}
+
+.title_1 #a {
+  margin-right: 0.15rem;
+}
+.title_2 {
+  font-size: clamp(1.5rem, 6vw, 4rem);
+
+  text-align: center;
+  font-weight: 400;
+  div:first-child {
+    // font-family: "Red Hat Display";
+    // font-weight: 800;
+  }
+}
+.line {
+  display: none;
+  background-color: $text_color;
+  height: 2px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.first_desc {
+  position: absolute;
+  top: -0.5rem;
+  right: 3.7rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.second_desc {
+  position: absolute;
+  bottom: -1rem;
+  left: 4.85rem;
+  overflow: hidden;
+  display: flex;
+}
+.frame {
+  display: flex;
+  position: relative;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 800px) {
+  .title_block {
+    padding: 5px;
+  }
+  .frame {
+    display: none;
+  }
+  .title_1 {
+    padding: 3rem;
+  }
+  .modalContainer {
+    display: flex;
+  }
+  .title_block {
+    min-height: 95vh;
+  }
+  .line {
+    display: block;
+  }
+}

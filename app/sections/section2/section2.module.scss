@@ -1,0 +1,102 @@
+@import "../../../variables.scss";
+// @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.section2 {
+  height: 100vh;
+  // width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  // justify-content: center;
+  background-color: black;
+  // margin-top: 400px;
+  // margin-bottom: 500px;
+}
+.title {
+  //   color: white;
+  text-transform: uppercase;
+}
+.title {
+  //   color: transparent;
+  // margin-bottom: 50px;
+  margin-top: 50px;
+}
+.title_text {
+  text-align: center;
+  background: linear-gradient(to right, $text_color 50%, rgb(37, 37, 37) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 1.2;
+  font-weight: 800;
+  // align-self: flex-start;
+  margin-top: 1rem;
+  font-size: clamp(1.5rem, 7vw, 4.5rem) !important;
+  font-family: Cardo !important;
+}
+.line {
+  height: 3px;
+  // width: 100%;
+  width: 0px;
+  background-color: $text_color;
+}
+// .text {
+//   // text-align: center;
+//   // scale: 0.7;
+//   width: 80%;
+// }
+.bold {
+  font-weight: 800;
+  display: inline !important;
+}
+
+.text2 {
+  width: 80%;
+  line-break: loose;
+  word-break: unset;
+  border-radius: 5px;
+  padding: clamp(1rem, 2vw, 2rem);
+  background-color: $text_color;
+  -webkit-text-stroke-width: 1px;
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+  line-height: clamp(2rem, 4vw, 3.5rem);
+  margin-top: auto;
+  margin-bottom: auto;
+  height: auto;
+}
+.text2 > * {
+  // background-color: green;
+  white-space: nowrap;
+  word-break: unset;
+  font-family: "Lobster Two";
+  font-style: italic;
+  // color: $text_color !important;
+}
+@media screen and (max-width: 800px) {
+  .title {
+    margin-bottom: 10px;
+  }
+  .text {
+    width: 95%;
+    text-align: center;
+  }
+  .text > * {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  .title {
+    margin-top: 20px;
+  }
+  .text2 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    width: 96%;
+  }
+  .section2 {
+    height: 100lvh;
+  }
+}
