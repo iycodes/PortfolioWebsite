@@ -2,10 +2,10 @@ import gsap from "gsap";
 import {
   CustomEase,
   ScrollTrigger,
-  ScrollSmoother,
+  // ScrollSmoother,
   // SplitText,
 } from "gsap/src/all";
-// import { ScrollSmoother } from "gsap-trial/all";
+import { ScrollSmoother } from "gsap-trial/all";
 // import { ScrollTrigger } from "gsap-trial/dist/ScrollTrigger";
 
 import { SplitText } from "gsap-trial/all";
