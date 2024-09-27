@@ -41,11 +41,11 @@ export default async function Page() {
       {/* <Section3 /> */}
       {/* <Section2 /> */}
       {/* <TechStack /> */}
-      <Contact />
+      {/* <Contact /> */}
       {/* <Footer /> */}
       {/* <Header /> */}
       {/* <Preloader /> */}
-      {/* <Home /> */}
+      <Home />
       {/* <StackedCards /> */}
       {/* <Section5_mobile />
       <Section5 /> */}

@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./home.module.scss";
 import useIsomorphicLayoutEffect from "../helpers/isomorphicEffect";
-// import { ScrollTrigger, customEaseIn, gsap } from "../lib/gsap";
 
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
@@ -171,23 +170,23 @@ function Home() {
             // duration: "1",
             ease: "ease.inout",
             // delay: "1",
-          });
-        // .to(headerRefSignal.value!.current, {
-        //   autoAlpha: 1,
-        //   top: "0.5rem",
-        //   duration: "1.5",
-        //   ease: "ease.inout",
-        //   height: "auto",
-        //   delay: "1",
-        // });
-        // .set(
-        //   ".body",
-        //   {
-        //     height: "auto",
-        //     overflow: "scroll",
-        //   },
-        //   "<"
-        // );
+          })
+          // .to(headerRefSignal.value!.current, {
+          //   autoAlpha: 1,
+          //   top: "0.5rem",
+          //   duration: "1.5",
+          //   ease: "ease.inout",
+          //   height: "auto",
+          //   delay: "1",
+          // });
+          .to(
+            ".body",
+            {
+              height: "auto",
+              overflow: "scroll",
+            },
+            "<"
+          );
 
         // timeline.play();
       }
