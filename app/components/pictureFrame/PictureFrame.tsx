@@ -8,7 +8,7 @@ function PictureFrame() {
     <div className={styles.container}>
       <Image src={photo} className={styles.innerFrame} alt="my picture" />
 
-      <div className={styles.about}>FULLSTACK DEVELOPER</div>
+      <div className={styles.about}>SOFTWARE DEVELOPER</div>
       <div className={styles.about}>
         <span>Fanoro Iyanuoluwa Victor</span>
       </div>

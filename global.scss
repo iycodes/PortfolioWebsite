@@ -33,7 +33,15 @@ html {
   color: $text_color;
   // color: teal;
 }
+.aki__char{
+  color:black;
+}
+.aki__word{
 
+}
+.aki__line {
+  // text-align: center;
+}
 html,
 body {
   // scroll-behavior: smooth !important;
@@ -52,13 +60,15 @@ body {
   // height: 100vh;
   // overflow: hidden;
 }
-html {
-  // because of the start animation
-  // height: 100vh;
-  // overflow: hidden;
-  // padding: 200px;
-  // background-color: red;
-}
+
+// .aki_wrapper {
+//   color:white;
+
+// .aki__word {
+//   color: blue; }
+// .aki__char {
+//   color: red;
+// }
 
 .panel {
   width: 100vw;

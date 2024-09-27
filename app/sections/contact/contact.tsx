@@ -31,8 +31,11 @@ function Contact({}: Props) {
     setIsSending(true);
 
     try {
-      await send_email(e);
+      const res: Response = await send_email(e);
       setIsSending(false);
+      if (res.status != 200) {
+        console.log("failing over");
+      }
       myToasts("success", "MESSAGE SENT!");
       formResetBtn.current?.click();
     } catch (error) {
@@ -83,13 +86,13 @@ function Contact({}: Props) {
           <span>
             <FaPhone />
           </span>
-          <span>08142751683</span>
+          <span>+2340000000000</span>
         </div>
         <div className={styles.info}>
           <span>
             <FaEnvelope />
           </span>
-          <span>iycodes@outlook.com</span>
+          <span>admin@iycodes.com</span>
         </div>
 
         <div className={styles.line}></div>
@@ -111,7 +114,7 @@ function Contact({}: Props) {
               <IoDocumentTextSharp />
               <span>Resumè</span>
             </a>
-            <a href="mailto:iycodes@outlook.com">
+            <a href="mailto:admin@iycodes.com">
               <RiMailAddLine />
               <span>Email</span>
             </a>

@@ -20,7 +20,7 @@ import Footer from "./sections/Footer/Footer";
 import TechStack from "./sections/techstack/TechStack";
 import { Scroll } from "./sections/ParallaxTexts/ParallaxTexts";
 import StackedCards from "./sections/stackedCards/stackedCards";
-import ScrollSmoothnerWrapper from "./ScrollSmoothner";
+// import ScrollSmoothnerWrapper from "./ScrollSmoothner";
 import Section5_mobile from "./sections/Section5_mobile/Section5_mobile";
 import StackCards2 from "./StackedCards2/StackCards2";
 import Header from "./components/Header/Header";
@@ -30,48 +30,42 @@ import localFont from "next/dist/compiled/@next/font/dist/local";
 // const Homr = React.lazy(() => Homm());
 //
 
-export const rockitFont = localFont({
-  src: "..//public/fonts/rockit.ttf",
-});
-export const iceFont = localFont({
-  src: "..//public/fonts/ice.ttf",
-});
 export default async function Page() {
-  // await sleep(3000);
+  await sleep(3000);
 
   return (
     <div>
-      <ScrollSmoothnerWrapper>
-        {/* <Scroll /> */}
-        {/* <Menu /> */}
-        {/* <Section3 /> */}
-        {/* <Section2 /> */}
-        {/* <TechStack /> */}
-        {/* <Contact /> */}
-        {/* <Footer /> */}
-        {/* <Header /> */}
-        {/* <Preloader /> */}
-        <Home />
-        {/* <StackedCards /> */}
-        {/* <Section5_mobile />
+      {/* <ScrollSmoothnerWrapper> */}
+      {/* <Scroll /> */}
+      {/* <Menu /> */}
+      {/* <Section3 /> */}
+      {/* <Section2 /> */}
+      {/* <TechStack /> */}
+      <Contact />
+      {/* <Footer /> */}
+      {/* <Header /> */}
+      {/* <Preloader /> */}
+      {/* <Home /> */}
+      {/* <StackedCards /> */}
+      {/* <Section5_mobile />
       <Section5 /> */}
-        {/* <Projects /> */}
-        {/* <StackCards2 /> */}
-        {/* <StackedCards /> */}
+      {/* <Projects /> */}
+      {/* <StackCards2 /> */}
+      {/* <StackedCards /> */}
 
-        {/* <Projectss /> */}
+      {/* <Projectss /> */}
 
-        {/* <Section5 /> */}
-        {/* <Section2 /> */}
-        {/* <Section2 />
+      {/* <Section5 /> */}
+      {/* <Section2 /> */}
+      {/* <Section2 />
       <Section2 />
       <Section2 /> */}
 
-        {/* <Section3 /> */}
-        {/* <Section4 /> */}
-        {/* <Textdata /> */}
-        {/* <PictureFrame /> */}
-      </ScrollSmoothnerWrapper>
+      {/* <Section3 /> */}
+      {/* <Section4 /> */}
+      {/* <Textdata /> */}
+      {/* <PictureFrame /> */}
+      {/* </ScrollSmoothnerWrapper> */}
     </div>
   );
 }

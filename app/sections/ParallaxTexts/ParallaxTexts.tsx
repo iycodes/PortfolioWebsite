@@ -117,6 +117,7 @@ export const Scroll = () => {
     <div className="container-fluid">
       <section className="Scroll">
         <div className="disciplines">
+          titleeee
           <div
             className="works-scrolling-container"
             ref={scrollingContainerRef}
@@ -131,7 +132,6 @@ export const Scroll = () => {
               </span>
             ))}
           </div>
-
           <div
             className="works-scrolling-container"
             ref={scrollingContainerRef1}
@@ -145,7 +145,6 @@ export const Scroll = () => {
               </span>
             ))}
           </div>
-
           <div
             className="works-scrolling-container"
             ref={scrollingContainerRef2}

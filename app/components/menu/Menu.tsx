@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { LegacyRef, useEffect, useRef, useState } from "react";
 import "./Menu.scss";
 
 // import { gsap } from "@/app/lib/gsap";
@@ -112,41 +112,41 @@ function Menu() {
               <li className="linkz">
                 <div
                   className="linkz-box"
-                  ref={(e: never) => link_box.current.push(e)}
+                  ref={(e: never) => link_box.current.push(e) as any}
                 >
-                  <a href="#">BNW</a>
+                  <a href="#">STILL</a>
                 </div>
               </li>
               <li className="linkz">
                 <div
                   className="linkz-box"
-                  ref={(e: never) => link_box.current.push(e)}
+                  ref={(e: never) => link_box.current.push(e) as any}
                 >
-                  <a href="#">SEATTLE</a>
+                  <a href="#">NOT</a>
                 </div>
               </li>
               <li className="linkz">
                 <div
                   className="linkz-box"
-                  ref={(e: never) => link_box.current.push(e)}
+                  ref={(e: never) => link_box.current.push(e) as any}
                 >
-                  <a href="#">JAPAN</a>
+                  <a href="#">DONE</a>
                 </div>
               </li>
               <li className="linkz">
                 <div
                   className="linkz-box"
-                  ref={(e: never) => link_box.current.push(e)}
+                  ref={(e: never) => link_box.current.push(e) as any}
                 >
-                  <a href="#">FILM</a>
+                  <a href="#">YET</a>
                 </div>
               </li>
               <li className="linkz">
                 <div
                   className="linkz-box"
-                  ref={(e: never) => link_box.current.push(e)}
+                  ref={(e: never) => link_box.current.push(e) as any}
                 >
-                  <a href="#">ABOUT</a>
+                  <a href="#">SOON...</a>
                 </div>
               </li>
             </ul>

@@ -114,9 +114,10 @@ $bar_width: 100%;
 }
 
 .iycodes {
-  font-size: clamp(5rem, 15vw, 14rem);
+  font-size: clamp(3.3rem, 15vw, 16rem);
   font-weight: 900;
   // scale: 3;
+  // transform: scaleY(2);
   color: $text_color;
   mix-blend-mode: difference;
   // height: min-content;
@@ -125,32 +126,38 @@ $bar_width: 100%;
   letter-spacing: 3px;
   display: none;
   .a {
-    @media screen and (max-width: 800px) {
+
+
+    @media screen and (max-width: 600px) {
       display: block;
-      letter-spacing: 20px;
+      transform: scaleY(1.5);
+      letter-spacing: 4px;
     }
-  }
-  .a {
+    @media screen and (max-width: 800px) {
+      display: inline-block;
+      letter-spacing: 4px;
+    }
     @media screen and (min-width: 801px) {
       display: none;
     }
   }
   .b {
+    display: inline-block;
+    // transform: scaleY(2);
     @media screen and (max-width: 800px) {
       display: none;
     }
-  }
-  .b {
     @media screen and (min-width: 801px) {
       display: block;
       letter-spacing: 3px;
     }
   }
+  
   //   word-break: keep-all;
 }
 .iycodes2 {
   // font-size: 5.5rem;
-  font-size: clamp(5rem, 15vw, 14rem);
+  font-size: clamp(3.5rem, 15vw, 16rem);
   font-weight: 900;
   color: $text_color;
   mix-blend-mode: difference;
@@ -160,7 +167,11 @@ $bar_width: 100%;
   letter-spacing: 15px;
   display: none;
 
-  //   word-break: keep-all;
+
+    @media screen and (max-width: 600px) {
+      transform: scaleY(1.5);
+      letter-spacing: 4px;
+    }
 }
 
 .bkg {

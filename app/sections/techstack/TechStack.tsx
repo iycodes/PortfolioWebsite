@@ -21,6 +21,7 @@ function TechStack() {
           <div className={styles.skills}>
             <span>html/css</span>
             <span>Vanilla JS/TS</span>
+            <span>gsap</span>
             <span>Flutter</span>
             <span>React Js</span>
             <span>Next Js</span>
@@ -30,11 +31,12 @@ function TechStack() {
           <div>BACKEND</div>
           <div className={styles.skills}>
             <span>fastify</span> <span> expressjs </span> <span>django</span>
+            <span>nodejS</span>
             <span>SpringBoot</span>
             <span>FastApi</span>
-            <span> Raw SQL</span>
+            <span> MySQL</span>
             <span>Postgres SQL</span>
-            <span>Prisma ORM, </span>
+            <span>Database ORMS</span>
             <span>mongo db</span>
           </div>
         </div>
@@ -59,7 +61,6 @@ function TechStack() {
             <span>Google cloud console</span>
             <span>Heroku</span>
             <span>AWS</span>
-
             <span>Git,GitHhub</span>
           </div>
         </div>

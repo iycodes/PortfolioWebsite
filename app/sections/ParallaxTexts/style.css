@@ -45,12 +45,13 @@
     padding: 20px 40px;
     border: 1px solid;
     border-radius: 40px;
+    margin-bottom: 300px;
 }
 
 .works-discipline-0 {
     display: inline-block;
     margin-right: 1rem;
-    font-size: 7.5rem;
+    font-size: 1.3rem;
     margin-bottom: 25px;
     font-weight: 900;
     line-height: 0.7;
@@ -60,7 +61,7 @@
 .works-discipline-1 {
     display: inline-block;
     margin-right: 1rem;
-    font-size: 7.5rem;
+    font-size: 1.3rem;
     margin-bottom: 25px;
     font-weight: 900;
     line-height: 0.7;
@@ -70,7 +71,7 @@
 .works-discipline-2 {
     display: inline-block;
     margin-right: 1rem;
-    font-size: 7.5rem;
+    font-size: 1.2rem;
     margin-bottom: 25px;
     font-weight: 900;
     line-height: 0.7;
@@ -80,7 +81,7 @@
 .works-discipline-3 {
     display: inline-block;
     margin-right: 1rem;
-    font-size: 7.5rem;
+    font-size: 1.2rem;
     margin-bottom: 25px;
     font-weight: 900;
     line-height: 0.7;
@@ -90,7 +91,7 @@
 .blog-item {
     display: inline-block;
     margin-right: 1rem;
-    font-size: 4rem;
+    font-size: 0.8rem;
     margin-bottom: 10px;
     font-weight: 900;
     line-height: 0.7;
@@ -167,7 +168,7 @@ a:active .works-discipline-4.blog-item {
         .works-discipline-3,
         .works-discipline-4,
         .blog-item {
-            font-size: 10rem;
+            font-size: 1.8rem;
             font-weight: 600;
             line-height: 0.7em;
         }
@@ -197,7 +198,7 @@ a:active .works-discipline-4.blog-item {
 
 @media only screen and (max-width: 1199px) {
     h1.works-title {
-        font-size: 100px;
+        font-size: 16px;
     }
 }
 
@@ -214,13 +215,13 @@ a:active .works-discipline-4.blog-item {
     .works-discipline-4,
     .blog-item {
         /* Adjust the font size, margin, etc. as necessary */
-        font-size: 5rem;
+        font-size: 1rem;
         margin-bottom: 30px;
         padding: 15px;
     }
 
     h1.works-title {
-        font-size: 60px;
+        font-size: 10px;
     }
 
     .reads-container {
@@ -243,7 +244,7 @@ a:active .works-discipline-4.blog-item {
     .works-discipline-3,
     .blog-item {
         /* Adjust the font size, margin, etc. as necessary */
-        font-size: 3rem;
+        font-size: 0.5rem;
         margin: 10px;
         padding: 10px;
     }
@@ -256,7 +257,7 @@ a:active .works-discipline-4.blog-item {
 /* For devices smaller than 576px */
 @media only screen and (max-width: 575px) {
     h1.works-title {
-        font-size: 30px;
+        font-size: 5px;
     }
 
     .blog-item {

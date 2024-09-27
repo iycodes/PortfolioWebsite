@@ -5,12 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@grcmichael/gscroll':
-    specifier: ^1.0.15
-    version: 1.0.15
   '@gsap/react':
-    specifier: ^2.0.1
-    version: 2.1.0
+    specifier: 2.1.1
+    version: 2.1.1
   '@lottiefiles/react-lottie-player':
     specifier: ^3.5.3
     version: 3.5.3(react@18.2.0)
@@ -24,10 +21,10 @@ dependencies:
     specifier: ^10.18.0
     version: 10.18.0(@react-three/fiber@8.15.16)(react-dom@18.2.0)(react@18.2.0)(three@0.161.0)
   gsap:
-    specifier: ^3.12.5
+    specifier: 3.12.5
     version: 3.12.5
   gsap-trial:
-    specifier: ^3.12.5
+    specifier: 3.12.5
     version: 3.12.5
   lottie-react:
     specifier: ^2.4.0
@@ -56,6 +53,9 @@ dependencies:
   sass:
     specifier: ^1.71.1
     version: 1.71.1
+  split-type:
+    specifier: ^0.3.4
+    version: 0.3.4
 
 devDependencies:
   '@types/node':
@@ -82,9 +82,6 @@ devDependencies:
   eslint-config-next:
     specifier: 14.1.0
     version: 14.1.0(eslint@8.57.0)(typescript@5.3.3)
-  gscroll:
-    specifier: link:@types/grcmichael/gscroll
-    version: link:@types/grcmichael/gscroll
   json-loader:
     specifier: ^0.5.7
     version: 0.5.7
@@ -167,14 +164,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@grcmichael/gscroll@1.0.15:
-    resolution: {integrity: sha512-zJX6P0Yxgb4Bt/EGZa1NSkyuVonUsYiKFKMBHNxJQaWZjZvXgpNUZfd0EbO1NrI5anr0xRmLQVGIVsn57usvIw==}
-    dependencies:
-      gsap: 3.12.5
-    dev: false
-
-  /@gsap/react@2.1.0:
-    resolution: {integrity: sha512-pwdFXvOM5IsRZXpWTKkQoEjb3/iUjDCU1BCJDlE6pHgVjG+7Ep/7+sszUgqVZ2Jc0mR8gnhtDWyx5cQAT4kwQw==}
+  /@gsap/react@2.1.1:
+    resolution: {integrity: sha512-apGPRrmpqxvl1T6Io1KgT8tFU+IuACI6z4zmT7t8+PASserJeLVRFJdSNUFA2Xb/eVkZI1noE8LIrY/w/oJECw==}
     dependencies:
       gsap: 3.12.5
       react: 18.2.0
@@ -2748,6 +2739,10 @@ packages:
   /source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
+
+  /split-type@0.3.4:
+    resolution: {integrity: sha512-otEk9vnD8qwfLsk3Lx0gz+qRkNIJCx0mlyL47ImP/DjMuV39d75Lpfwjn9fHteDRz0aoOblSzQjSNT9+Sswxcg==}
+    dev: false
 
   /streamsearch@1.1.0:
     resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}

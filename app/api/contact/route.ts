@@ -13,20 +13,23 @@ export async function POST(request: NextRequest) {
 
 let username: string | undefined;
 let password: string | undefined;
-let myEmail = "iyanuoluwafanoro@gmail.com";
+let myEmail = "fanoroiyanu@gmail.com";
 
 const getTransporter = (): Transporter => {
   username = process.env.EMAIL;
   password = process.env.PASSWORD;
+  console.log("email is ", username);
+  console.log("password is", password);
   console.log("username=>>", username);
   const transporter_ = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com",
+    host: "smtp.zoho.com",
     port: 587,
-    tls: {
-      ciphers: "SSLv3",
-      rejectUnauthorized: false,
-    },
-
+    // tls: {
+    //   ciphers: "SSLv3",
+    //   rejectUnauthorized: false,
+    // },
+    // secure: true,
+    requireTLS: true,
     auth: {
       user: username,
       pass: password,

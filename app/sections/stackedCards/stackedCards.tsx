@@ -6,7 +6,8 @@ import { Tween } from "framer-motion";
 import useIsomorphicLayoutEffect from "@/app/helpers/isomorphicEffect";
 import { start } from "repl";
 
-import { gsap, useGSAP, ScrollTrigger, ScrollSmoother } from "@/app/lib/gsap";
+import { gsap, useGSAP, ScrollTrigger } from "@/app/lib/gsap";
+// import {  ScrollSmoother } from "@/app/lib/gsap";
 
 const StackedCards = () => {
   const componentRef = useRef(null);
@@ -28,7 +29,7 @@ const StackedCards = () => {
   //     window.removeEventListener("scroll", handleScroll);
   //   };
   // }, []);
-  const smoother = useRef<ScrollSmoother>();
+  // const smoother = useRef<ScrollSmoother>();
   useGSAP(() => {
     cardss.current;
     const cards = gsap.utils.toArray(cardRefs.current);
@@ -91,7 +92,7 @@ const StackedCards = () => {
           <div
             key={`card${i}`}
             className={styles.card}
-            ref={(e: never) => cardRefs.current.push(e)}
+            ref={(e: never) => cardRefs.current.push(e) as any}
           >
             <Card title={e.title} link={e.link} body={e.body} tools={e.tools} />
           </div>

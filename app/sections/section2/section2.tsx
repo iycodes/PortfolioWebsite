@@ -9,12 +9,10 @@ import React, {
 } from "react";
 import styles from "./section2.module.scss";
 import useIsomorphicLayoutEffect from "@/app/helpers/isomorphicEffect";
-// import { SplitText, customEaseIn, gsap } from "@/app/lib/gsap";
 
-// import SplitText from "gsap-trial/all";
-import { gsap, SplitText, useGSAP } from "@/app/lib/gsap";
+import { gsap, SplitText as r, useGSAP } from "@/app/lib/gsap";
 
-import { signal } from "@preact/signals-core";
+import SplitType from "split-type";
 
 function Section2() {
   const section2 = useRef(null);
@@ -22,16 +20,25 @@ function Section2() {
   const title = useRef(null);
   const line = useRef(null);
   const text2 = useRef(null);
-
   const useGSAP_options = {
     scope: section2,
     dependencies: [],
   } as any;
 
   useGSAP(() => {
-    const myText = new SplitText(text2.current, {
-      type: "chars",
+    // const myText = new SplitText(
+    //   text2.current
+    //   //    {
+    //   //   type: "chars",
+    //   // }
+    // );
+    const myText = new SplitType("#texttt", {
+      types: "chars",
     });
+    // console.log("chars is", myText.chars);
+
+    // const myText = new Split2("#texttt");
+
     gsap.set(section2.current, {
       marginBottom: window.innerHeight,
     });
@@ -44,7 +51,7 @@ function Section2() {
         // end: "bottom bottom",
         scrub: true,
       },
-      color: "#000000",
+      color: "rgb(227, 246, 247)",
       stagger: {
         amount: 20,
       },
@@ -73,7 +80,6 @@ function Section2() {
         ease: "none",
         scrollTrigger: {
           trigger: section2.current,
-
           scrub: 1,
           start: "top center",
           end: "+=10",
@@ -128,11 +134,11 @@ function Section2() {
         </div>
         <div ref={line} className={styles.line}></div>
       </div>
-      <div ref={text2} className={styles.text2}>
-        I am a versatile Full Stack Developer proficient in backend, web, web3
-        and cross platform mobile development. With a passion for creating
-        seamless digital experiences, I bring a comprehensive skill set to the
-        table. From crafting robust backend systems to designing intuitive user
+      <div id="texttt" ref={text2} className={`${styles.text2} texttt`}>
+        I am a versatile Software Developer proficient in backend, web, web3 and
+        cross platform mobile development. With a passion for creating seamless
+        digital experiences, I bring a comprehensive skill set to the table.
+        From crafting robust backend systems to designing intuitive user
         interfaces and developing mobile applications, I thrive on delivering
         end-to-end solutions. My dedication to staying abreast of the latest
         technologies ensures that I can tackle diverse challenges in the

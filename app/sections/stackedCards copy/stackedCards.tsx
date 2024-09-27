@@ -138,7 +138,7 @@ const StackedCards = () => {
             <div
               key={`card${i}`}
               className={`${styles.card} cardz`}
-              ref={(e: never) => cardRefs.current.push(e)}
+              ref={(e: never) => cardRefs.current.push(e) as any}
             >
               <Card
                 title={e.title}

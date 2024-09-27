@@ -64,6 +64,7 @@
   font-weight: 600;
   color: $text_color;
   padding: 1rem;
+  max-width: 1400px;
 }
 
 .desc_1 {
@@ -140,8 +141,8 @@
   margin-right: 0.15rem;
 }
 .title_2 {
+  margin-top: -20px;
   font-size: clamp(1.5rem, 6vw, 4rem);
-
   text-align: center;
   font-weight: 400;
   div:first-child {
@@ -179,6 +180,8 @@
 @media screen and (min-width: 800px) {
   .title_block {
     padding: 5px;
+  margin-top: 0px;
+
   }
   .frame {
     display: none;

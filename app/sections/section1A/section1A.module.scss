@@ -25,7 +25,7 @@
 }
 .title {
   margin-top: 1rem;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   margin-bottom: 3rem;
   font-family: "Red Hat Display";
@@ -80,7 +80,8 @@
   flex-direction: column;
   gap: 1rem;
   // width: 65%;
-  line-height: 25px;
+  // line-height: 25px;
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .spikes {

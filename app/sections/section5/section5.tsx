@@ -58,7 +58,7 @@ function Section5() {
         </div>
         <div
           ref={(e: never) => {
-            panels.current.push(e);
+            panels.current.push(e) as any;
           }}
           className={styles.project_container}
         >
@@ -66,7 +66,7 @@ function Section5() {
         </div>
         <div
           ref={(e: never) => {
-            panels.current.push(e);
+            panels.current.push(e) as any;
           }}
           className={styles.project_container}
         >
@@ -74,7 +74,7 @@ function Section5() {
         </div>
         <div
           ref={(e: never) => {
-            panels.current.push(e);
+            panels.current.push(e) as any;
           }}
           className={styles.project_container}
         >
@@ -82,7 +82,7 @@ function Section5() {
         </div>
         <div
           ref={(e: never) => {
-            panels.current.push(e);
+            panels.current.push(e) as any;
           }}
           className={styles.project_container}
           // className={`${styles.panel} ${styles.red}`}
@@ -91,7 +91,7 @@ function Section5() {
         </div>
         <div
           ref={(e: never) => {
-            panels.current.push(e);
+            panels.current.push(e) as any;
           }}
           className={styles.project_container}
           // className={`${styles.panel} ${styles.red}`}

@@ -12,7 +12,9 @@ import { motion } from "framer-motion";
 import PictureFrame from "@/app/components/pictureFrame/PictureFrame";
 import Section1A from "../section1A/section1A";
 import { useGSAP } from "@gsap/react";
-import { rockitFont } from "@/app/page";
+import { iceFont, rockitFont } from "../../fonts";
+// import { rockitFont } from "@/app/fonts";
+
 // import { rockitFont } from "@/app/layout";
 let timeline_: gsap.core.Timeline | undefined;
 
@@ -211,7 +213,9 @@ function Section1() {
             </div>
           </div>
           <div className={styles.title_2}>
-            <div ref={book}>FULLSTACK DEVELOPER</div>
+            <div className={iceFont.className} ref={book}>
+              SOFTWARE DEVELOPER
+            </div>
             <div className={styles.desc_1} ref={open}>
               Web & Mobile
             </div>

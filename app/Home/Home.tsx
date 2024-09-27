@@ -20,14 +20,14 @@ import Section5 from "../sections/section5/section5";
 import TechStack from "../sections/techstack/TechStack";
 import Contact from "../sections/contact/contact";
 import StackedCards from "../sections/stackedCards/stackedCards";
-import { ScrollSmoother } from "gsap-trial/all";
 import { customEaseIn, useGSAP, gsap } from "../lib/gsap";
 import Footer from "../sections/Footer/Footer";
 import Section5_mobile from "../sections/Section5_mobile/Section5_mobile";
 import Menu, { menuRefSignal } from "../components/menu/Menu";
 // import { iceFont, rockitFont } from "../layout";
 import { headerRefSignal } from "../components/Header/Header";
-import { iceFont, rockitFont } from "../page";
+import { iceFont } from "../fonts";
+// import { iceFont, rockitFont } from "../page";
 
 function Home() {
   const cursorLabel = useRef(null);
@@ -275,7 +275,7 @@ export const Iycodes = () => {
   });
   return (
     <span className={styles.iycodes} ref={iycodes}>
-      <span className={`${iceFont.className} ${styles.a}`}>VICTOR</span>
+      <span className={`${iceFont.className} ${styles.a}`}>IYANUOLUWA</span>
       <span className={`${iceFont.className} ${styles.b}`}>IYANUOLUWA</span>
     </span>
   );
