@@ -1,0 +1,93 @@
+@import "../../../variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+.handle {
+  height: 20px;
+  width: 42px;
+  border-top-left-radius: 10000px;
+  border-top-right-radius: 10000px;
+  background-color: black;
+  border-top: 1px solid $text_color;
+  border-left: 1px solid $text_color;
+  border-right: 1px solid $text_color;
+  border-bottom: 1px solid black;
+  z-index: 100;
+  margin-bottom: -2px;
+  background-color: black;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  //   background-color: brown;
+  align-items: center;
+  gap: 3rem;
+
+  padding: 2rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  // margin-bottom: 100px;
+  background-color: black;
+  // border-top-right-radius: 50px;
+  // border-top-left-radius: 50px;
+  border-top: 1px solid $text_color;
+  width: 100vw;
+}
+.title {
+  line-height: 1.2;
+  font-size: clamp(2.3rem, 7vw, 4.5rem) !important;
+  font-weight: 700;
+  font-family: Cardo;
+}
+.main span {
+  //   background-color: teal;
+  background-color: $text_color;
+  font-weight: 700;
+  //   color: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  // border: 1px solid teal;
+  box-shadow: teal 2px 2px 3px;
+}
+
+.main > div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 2rem;
+  div {
+    &:first-child {
+      &:first-child {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+.main > div > div {
+  display: flex;
+  gap: 10px;
+  //   background-color: red;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: cardo;
+}
+
+.main > div > div:first-child {
+  font-weight: 800;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3rem !important;
+}
+.skills * {
+  font-family: "Berkshire Swash";
+}
+@media screen and (max-width: 800px) {
+}

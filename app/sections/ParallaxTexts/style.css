@@ -1,0 +1,275 @@
+.disciplines {
+    padding-bottom: 100px;
+
+    transform: rotate(-2.5deg);
+}
+
+.reads {
+    padding-bottom: 0px;
+}
+
+.reads-container {
+    margin: 5px;
+    padding: 30px 60px;
+    white-space: nowrap;
+    border: 1px solid;
+    border-radius: 40px;
+    display: inline-block;
+    vertical-align: center;
+    /* Use inline-flex if you want it to be inline with other elements */
+    flex-wrap: wrap;
+}
+
+.reads-container a {
+    color: var(--text-color);
+}
+
+.reads-container a:visited {
+    color: var(--text-color);
+}
+
+.reads-container a:hover {
+    color: red;
+}
+
+.reads-container a:active {
+    color: white;
+    transform: scale(1.2);
+}
+
+.About-header {
+    padding-top: 100px;
+}
+
+.works-scrolling-container {
+    padding: 20px 40px;
+    border: 1px solid;
+    border-radius: 40px;
+    margin-bottom: 300px;
+}
+
+.works-discipline-0 {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-weight: 900;
+    line-height: 0.7;
+    transform: rotate(0deg);
+}
+
+.works-discipline-1 {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    font-weight: 900;
+    line-height: 0.7;
+    transform: rotate(0deg);
+}
+
+.works-discipline-2 {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 900;
+    line-height: 0.7;
+    transform: rotate(0deg);
+}
+
+.works-discipline-3 {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 900;
+    line-height: 0.7;
+    transform: rotate(0deg);
+}
+
+.blog-item {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+    line-height: 0.7;
+}
+
+.blog-titles {
+    padding-top: 50px;
+}
+
+a .works-discipline-4.blog-item {
+    color: var(--text-color);
+}
+
+a:visited .works-discipline-4.blog-item {
+    color: var(--text-color);
+}
+
+a:hover .works-discipline-4.blog-item {
+    color: red;
+}
+
+a:active .works-discipline-4.blog-item {
+    color: white;
+    transform: scale(1.2);
+}
+
+.works-scrolling-container a {
+    color: var(--text-color);
+}
+
+.works-scrolling-container a:visited {
+    color: var(--text-color);
+}
+
+.works-scrolling-container a:hover {
+    color: red;
+}
+
+.works-scrolling-container a:active {
+    color: white;
+    transform: scale(1.2);
+}
+
+@media (min-width: 1200px) {
+    .blog-item {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 1em;
+    }
+
+    @media (min-width: 1600px) {
+        .blog-item {
+            font-size: 5rem;
+            font-weight: 600;
+            line-height: 1em;
+        }
+
+        .reads-container {
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .disciplines {
+            padding-top: 100px;
+            padding-bottom: 150px;
+        }
+    }
+
+    @media (min-width: 3000px) {
+
+        .works-discipline-0,
+        .works-discipline-1,
+        .works-discipline-2,
+        .works-discipline-3,
+        .works-discipline-4,
+        .blog-item {
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 0.7em;
+        }
+
+        .reads-container {
+            padding: 30px;
+            margin: 7.5px;
+        }
+
+        .disciplines {
+            padding-top: 250px;
+            padding-bottom: 250px;
+        }
+    }
+
+    @media (min-width: 2400px) {}
+
+    .reads-container {
+        padding: 20px 20px 20px 20px;
+        margin: 5px;
+    }
+
+    .reads {
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    h1.works-title {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .works-scrolling-container {
+        /* Adjust the padding-top and other properties as necessary */
+        padding-top: 15px;
+    }
+
+    .works-discipline-0,
+    .works-discipline-1,
+    .works-discipline-2,
+    .works-discipline-3,
+    .works-discipline-4,
+    .blog-item {
+        /* Adjust the font size, margin, etc. as necessary */
+        font-size: 1rem;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+
+    h1.works-title {
+        font-size: 10px;
+    }
+
+    .reads-container {
+        padding-top: 15px;
+    }
+}
+
+/* For mobile phones (devices smaller than 768px) */
+@media only screen and (max-width: 768px) {
+    .works-scrolling-container {
+        /* Adjust the padding-top and other properties as necessary */
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .works-discipline-0,
+    .works-discipline-1,
+    .works-discipline-2,
+    .works-discipline-3,
+    .blog-item {
+        /* Adjust the font size, margin, etc. as necessary */
+        font-size: 0.5rem;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .reads-container {
+        padding: 30px;
+    }
+}
+
+/* For devices smaller than 576px */
+@media only screen and (max-width: 575px) {
+    h1.works-title {
+        font-size: 5px;
+    }
+
+    .blog-item {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 1em;
+    }
+
+    .reads-container {
+        padding: 10px 0px 0px 10px;
+        margin: 2px;
+    }
+
+    .blog-titles {}
+}
