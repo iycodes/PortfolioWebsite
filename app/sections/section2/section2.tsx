@@ -10,7 +10,7 @@ import React, {
 import styles from "./section2.module.scss";
 import useIsomorphicLayoutEffect from "@/app/helpers/isomorphicEffect";
 
-import { gsap, SplitText as r, useGSAP } from "@/app/lib/gsap";
+import { gsap, useGSAP } from "@/app/lib/gsap";
 
 import SplitType from "split-type";
 

@@ -9,7 +9,6 @@ import {
 // import { ScrollTrigger } from "gsap-trial/dist/ScrollTrigger";
 
 // import { SplitText } from "gsap-trial/all";
-import { SplitText } from "@/app/plugins/splitText";
 
 // import { SplitText } from "@/app/plugins/splitText";
 
@@ -19,7 +18,6 @@ ScrollTrigger.config({ ignoreMobileResize: true });
 gsap.registerPlugin(
   CustomEase,
   ScrollTrigger,
-  SplitText,
   // ScrollSmoother,
   useGSAP
 );
@@ -55,6 +53,5 @@ export {
   gsap,
   // ScrollSmoother,
   ScrollTrigger,
-  SplitText,
   useGSAP,
 };
