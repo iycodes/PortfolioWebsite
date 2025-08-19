@@ -62,7 +62,7 @@ function Section2() {
         trigger: section2.current,
         pin: true,
         scrub: 3,
-        // markers: true,
+        // markers:true,
         start: "top top",
         end: `+=${window.innerHeight * 2 + 100}`,
         // end: "bottom",
@@ -115,7 +115,7 @@ function Section2() {
           scrollTrigger: {
             trigger: section2.current,
             scrub: 3,
-            // markers: true,
+            // markers:true,
             start: "top top",
             // end: `+=${window.innerHeight + 500}`,
             end: `+=${window.innerHeight - 100}`,

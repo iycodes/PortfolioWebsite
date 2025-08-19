@@ -46,7 +46,7 @@ const StackedCards = () => {
           start: () => `top bottom-=100`,
           end: () => `top top+=200`,
           // scrub: 10,
-          markers: true,
+          // markers:true,
           invalidateOnRefresh: true,
         },
         // scrol
@@ -64,7 +64,7 @@ const StackedCards = () => {
         pin: true,
         pinSpacing: false,
         scrub: 10,
-        markers: true,
+        // markers:true,
         id: "pin",
         // preventOverlaps: true,
         // end: "+=" + window.innerHeight / 2,

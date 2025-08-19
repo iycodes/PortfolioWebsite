@@ -18,7 +18,7 @@ function StackCards2() {
           trigger: card,
           start: `top top`,
           scrub: true,
-          markers: true,
+          // markers:true,
           invalidateOnRefresh: true,
         },
         ease: "none",
@@ -32,7 +32,7 @@ function StackCards2() {
         end: `bottom top+=${200 + cards.length * spacer}`,
         pin: true,
         pinSpacing: false,
-        markers: true,
+        // markers:true,
         id: "pin",
         invalidateOnRefresh: true,
       });

@@ -5,12 +5,6 @@ import {
   // ScrollSmoother,
   // SplitText,
 } from "gsap/src/all";
-// import { ScrollSmoother } from "gsap-trial/all";
-// import { ScrollTrigger } from "gsap-trial/dist/ScrollTrigger";
-
-// import { SplitText } from "gsap-trial/all";
-
-// import { SplitText } from "@/app/plugins/splitText";
 
 import { useGSAP } from "@gsap/react";
 ScrollTrigger.config({ ignoreMobileResize: true });

@@ -1,5 +1,6 @@
 import React, { Suspense, useEffect } from "react";
 import { sleep } from "./helpers/helperFunctions";
+
 import styles from "./page.module.scss";
 import Card1 from "./components/card1/Card1";
 import Section1 from "./sections/section1/section1";
@@ -25,6 +26,7 @@ import Section5_mobile from "./sections/Section5_mobile/Section5_mobile";
 import StackCards2 from "./StackedCards2/StackCards2";
 import Header from "./components/Header/Header";
 import localFont from "next/dist/compiled/@next/font/dist/local";
+import Loading from "./loadingg";
 
 // const Home = React.lazy(() => import("./Home/Home"));
 // const Homr = React.lazy(() => Homm());
@@ -34,6 +36,10 @@ export default async function Page() {
   await sleep(3000);
 
   return (
+    // <Suspense fallback={<Loading />}>
+    //   <Homl />
+    // </Suspense>
+
     <div>
       {/* <ScrollSmoothnerWrapper> */}
       {/* <Scroll /> */}

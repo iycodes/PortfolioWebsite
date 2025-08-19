@@ -35,7 +35,7 @@ function Card1() {
       pin: true,
       start: "center center",
       end: "+=300",
-      markers: true,
+      // markers:true,
     });
   }, []);
 

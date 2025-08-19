@@ -1,10 +1,11 @@
+"use client";
 import React from "react";
 import Preloader from "./components/preloader/preloader";
-import Loading from "./loadingg";
+import Loadingg from "./loadingg";
 
-function loading() {
+function Loading() {
   //   return <Preloader />;
-  return <Loading />;
+  return <Loadingg />;
 }
 
-export default loading;
+export default Loading;

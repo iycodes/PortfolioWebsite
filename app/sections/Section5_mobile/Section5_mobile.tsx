@@ -34,6 +34,7 @@ function Section5_mobile() {
           },
         }
       );
+      
       const tween2 = gsap.fromTo(
         allImages[i],
         {

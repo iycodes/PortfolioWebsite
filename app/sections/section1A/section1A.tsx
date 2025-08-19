@@ -88,12 +88,13 @@ function Section1A() {
         const tlDesktop = gsap.timeline({
           scrollTrigger: {
             trigger: circle_D.current,
-            markers: {
-              startColor: "white",
-              endColor: "white",
-            },
+
             start: "bottom bottom",
             // markers: true,
+            // markers: {
+            //   startColor: "white",
+            //   endColor: "white",
+            // },
             onEnter: () => {
               console.log("moti wole oo");
             },
