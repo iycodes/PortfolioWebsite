@@ -15,7 +15,7 @@ function Template({ children }: { children: React.ReactNode }) {
 }
 
 async function Homl() {
-  await sleep(3000);
+  // await sleep(3000);
   return <Home />;
 }
 

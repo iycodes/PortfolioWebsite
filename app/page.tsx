@@ -26,7 +26,7 @@ import Section5_mobile from "./sections/Section5_mobile/Section5_mobile";
 import StackCards2 from "./StackedCards2/StackCards2";
 import Header from "./components/Header/Header";
 import localFont from "next/dist/compiled/@next/font/dist/local";
-import Loading from "./loadingg";
+import Loading from "./loading";
 
 // const Home = React.lazy(() => import("./Home/Home"));
 // const Homr = React.lazy(() => Homm());
@@ -51,6 +51,7 @@ export default async function Page() {
       {/* <Footer /> */}
       {/* <Header /> */}
       {/* <Preloader /> */}
+      {/* <Loading/> */}
       <Home />
       {/* <StackedCards /> */}
       {/* <Section5_mobile />
