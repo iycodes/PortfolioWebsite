@@ -5,7 +5,7 @@ import Loadingg from "./loadingg";
 
 export default  function Loading() {
   //   return <Preloader />;
-   return <p>Loading...</p>
-  // return <Loadingg />;
+  //  return <p>Loading...</p>
+  return <Loadingg />;
 }
 
